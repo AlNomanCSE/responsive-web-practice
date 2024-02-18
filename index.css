@@ -203,6 +203,11 @@ Hero
     }
 } */
 
+@media screen and (max-width:300px) {
+    .cards-center {
+       padding: 0 2rem;
+    }
+}
 .cards-center {
     display: grid;
     gap: 2rem;
