@@ -199,7 +199,7 @@ Hero
 }
 
 .tiles {
-    padding: 2rem 2rem;
+    padding: 2rem 0rem;
 }
 .tiles-center {
     width: 80vw;
@@ -207,7 +207,7 @@ Hero
     max-width: 1170px;
     gap: 1rem;
     padding: 1rem ;
-    margin: 1rem auto;
+    margin: 2rem auto;
     grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
     justify-content: center;
 }
