@@ -161,3 +161,35 @@ Hero
     }
 }
 
+.title {
+    text-align: center;
+}
+
+.cards-center {
+    padding: 0 2rem;
+    display: grid;
+    max-width: 1170px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    border: 1px solid var(--darkGrey);
+    margin-bottom: 4rem;
+    padding: 1rem;
+}
+
+.card-info {
+    padding: .7rem;
+}
+
+.card-footer {
+    background-color: var(--darkGrey);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: .5rem 1rem;
+    color: var(--mainBlack);
+}
