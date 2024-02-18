@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* variables */
+:root {
+    --mainBlack: #222;
+    --mainWhite: #fff;
+    --offWhite: #f7f7f7;
+    --darkGrey: #afafaf;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 0.2rem;
+    --primaryColo: #FB88B4;
+}
+
+/* 
+=======
+global 
+=======
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: capitalize;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 1.25rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+p {
+    font-weight: 300;
+    font-size: 0.7rem;
+    line-height: 2;
+}
+
+/* button */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    border: 3px solid #FB88B4;
+    color: #FB88B4;
+    transition: var(--mainTransition);
+    border-radius: 5px;
+    outline: none;
+    margin: 3rem;
+}
+
+.btn:hover {
+    background-color: var(--primaryColo);
+    color: var(--mainBlack);
+}
+
+/* 
+=========
+Main NavBar
+=========
+ */
+
+.main-navbar {
+    background-color: var(--mainBlack);
+    padding: 0 1rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.main-navbar ul {
+    list-style: none;
+}
+
+.main-navbar a {
+    display: block;
+    padding: 1rem 0;
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+}
+
+
+
+@media screen and (min-width:992px) {
+    .main-navbar ul {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+}
+
+
+/* 
+=====
+Hero
+======
+*/
+
+.hero-header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75)), url("./2-setup/grid-projects/images/image-1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: var(--offWhite);
+}
+
+.hero-banner {
+    /* padding: 0 1rem; */
+}
+
+.hero-banner p {
+    width: 80%;
+    max-width: 560px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:600px) {
+    .hero-banner {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .hero-header {
+        background-image: linear-gradient(rgba(241, 80, 37, 0.75),
+                rgba(0, 0, 0, 0.75)), url("./2-setup/grid-projects/images/image-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        background-attachment: scroll;
+    }
+}
+
+.title {
+    text-align: center;
+}
+
+.cards {
+    padding: 4rem 0;
+}
+
+.cards-center {
+    width: 80vw;
+    max-width: 1170px;
+    margin: 2rem auto;
+}
+
+.card-info {
+    padding: 1rem;
+}
+
+.card {
+    border: 2px solid var(--darkGrey);
+    margin-bottom: 3rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.card-footer {
+    background-color: var(--darkGrey);
+    padding: .5rem 1rem;
+    color: var(--primaryColo);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+/* @media screen and (min-width:768px) {
+    .cards-center {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width:1170px) {
+    .cards-center {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */
+
+
+.cards-center {
+    display: grid;
+    gap: 2rem;
+    /* grid-template-columns: repeat(auto-fill,minmax(368px,1fr)); */
+    /* 3 column */
+    grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+    /* 4 column */
+    /* grid-template-columns: repeat(auto-fit, minmax(268px, 1fr)); */
+
+}
