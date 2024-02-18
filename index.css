@@ -173,7 +173,7 @@ Hero
     max-width: 1170px;
     width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
     gap: 1rem;
 }
 
@@ -198,6 +198,11 @@ Hero
     padding: .5rem 1rem;
     color: var(--mainBlack);
 }
+
+
+
+
+/* tiels */
 
 .tiles {
     padding: 2rem 0rem;
